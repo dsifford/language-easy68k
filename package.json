@@ -2,7 +2,7 @@
     "name": "easy68k",
     "displayName": "language-easy68k",
     "description": "Syntax highlighting for Easy68k and CPU32 Assembly instruction sets",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "dsifford",
     "engines": {
         "vscode": "^1.19.0"
@@ -11,15 +11,23 @@
         "Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "easy68k",
-            "extensions": [".x68",".X68",".s"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "easy68k",
-            "scopeName": "source.easy68k",
-            "path": "./syntaxes/easy68k.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "easy68k",
+                "extensions": [
+                    ".x68",
+                    ".X68",
+                    ".s"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "easy68k",
+                "scopeName": "source.easy68k",
+                "path": "./syntaxes/easy68k.tmLanguage.json"
+            }
+        ]
     }
 }
